@@ -6,7 +6,6 @@ ENV COLLECTOR_SERVER=127.0.0.1:12800 \
 
 COPY catalina.sh /usr/local/tomcat/bin/
 ADD jedis-standalone-case /usr/local/tomcat/webapps/jedis-standalone-case
-COPY sky-walking.config /usr/local/tomcat/agent-config/sky-walking.config
 COPY jedis.properties /usr/local/tomcat/webapps/jedis-standalone-case/WEB-INF/classes/
 
 ADD docker-entrypoint.sh /
